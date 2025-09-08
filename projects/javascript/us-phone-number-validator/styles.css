@@ -1,0 +1,165 @@
+:root {
+    --phone-primary-color: #2E3047;
+    --phone-secondary-color: #707793;
+}
+
+body {
+    background-color: #707793;
+    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#phone {
+    width: 18rem;
+    height: 40rem;
+    background-color: var(--phone-primary-color);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+#camera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.2%;
+    height: 1.3rem;
+    background-color: var(--phone-secondary-color);
+    border-radius: 100%;
+    margin: auto;
+}
+
+#camera-inside {
+    width: 90%;
+    height: 90%;
+    background-color: var(--phone-primary-color);
+    border-radius: 100%;
+    margin: auto;
+}
+
+.container {
+    width: 16rem;
+    height: 30rem;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(9, 46, 63, 0.3);
+    margin: auto;
+    margin-block-start: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    margin-block-end: 2rem;
+}
+
+.container #content {
+    margin: auto;
+}
+
+#user-input {
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-block-start: 1rem;
+}
+
+#user-input:hover,
+#user-input:focus {
+  border: 2px solid #3BBA9C;
+  box-shadow: 0px 0px 0px 7px rgba(10, 32, 53, 0.2);
+  background-color: white;
+}
+
+button{
+  margin-block-start: 1rem;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Roboto",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#results-div {
+    width: 75%;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+#home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21%;
+    height: 3.8rem;
+    background-color: var(--phone-secondary-color);
+    border-radius: 100%;
+    margin: auto;
+    margin-block-start: 1rem;
+}
+
+#home-button-inside {
+    width: 85%;
+    height: 85%;
+    background-color: var(--phone-primary-color);
+    border-radius: 100%;
+    margin: auto;
+}

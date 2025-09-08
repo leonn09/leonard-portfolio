@@ -1,0 +1,157 @@
+/* Sets global styles for the entire page */
+body {
+    font-family: "Roboto", Arial, sans-serif; /* Clean, modern font */
+    background-color: #FF2D2B; /* Bright red background */
+    color: #FFF; /* White text color for contrast */
+    margin: 0; /* Removes default spacing around the body */
+}
+
+/* Styles the left navigation bar */
+#navbar {
+    background-color: #333; /* Dark background for contrast */
+}
+
+/* Media query: applies these styles only on wider screens (desktops/tablets) */
+@media (min-width: 1024px) {
+    #navbar {
+        position: fixed; /* Keeps the nav bar fixed on the left */
+        height: 100%; /* Full vertical height */
+        width: 400px; /* Width of the nav bar */
+        overflow: auto; /* Scroll if content overflows */
+    }
+
+    .main-section {
+        margin-left: 400px; /* Pushes the main content to the right of the nav */
+    }
+
+    .optional-section {
+        margin-left: 400px; /* Pushes the main content to the right of the nav */
+    }
+}
+
+/* Header inside the navbar */
+#navbar header {
+    padding: 15px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Span styling inside the nav header */
+#navbar header span {
+    font-size: 1.2rem;
+}
+
+/* Makes the bold title stand out more */
+#navbar header strong {
+    font-size: 1.4rem;
+}
+
+/* Navigation links inside the sidebar */
+#navbar a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    padding: 10px 15px; /* Adds clickable padding area */
+}
+
+/* Removes bullet points and spacing from nav list */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for each nav item (li) */
+#navbar ul li {
+    border: 1px solid #444; /* Subtle border for separation */
+    padding: 10px;
+}
+
+/* Main content section styling */
+.main-section {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    color: #333;
+}
+
+/* Section headers */
+.main-section header {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* Paragraph text in sections */
+.main-section p {
+    font-size: 1rem;
+    line-height: 1.6; /* Increases readability */
+    color: #555; /* Softer dark gray */
+}
+
+/* Unordered list styles in sections */
+.main-section ul {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Code example box styling */
+.code-example {
+    background-color: #300A6E; /* Deep purple background */
+    padding-inline: 20px; /* Horizontal padding */
+    padding-block: 10px; /* Vertical padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Code font inside code boxes */
+code {
+    color: white;
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+}
+
+/* Special section styling: Relative Units */
+
+#Relative_Units header {
+    display: inline-block; /* Allows it to sit next to .units text */
+}
+
+/* Small unit description (%, em, rem...) beside header */
+#Relative_Units .units {
+    display: inline-block;
+    margin-left: 3px;
+    margin: 0;
+}
+
+/* Removes bullet styles for unit list */
+#Relative_Units ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* Spacing between each unit list item */
+#Relative_Units ul li {
+    margin-bottom: 10px;
+}
+
+/* Final optional tools section at the bottom */
+.optional-section {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Styling header inside optional tools section */
+.optional-section header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Make links readable and styled like buttons */
+.optional-section a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Keep visited links white too */
+.optional-section a:visited {
+    color: #FFF;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leo Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="shortcut icon" href="#" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+  
+        <header>
+            <img id="leo-avatar" src="images/Leo.svg" alt="Leo avatar"/>
+            <div>
+                <h1>Hi, I'm <span class="name">Leo</span>,</h1>
+                a beginner web developer.
+                <nav>
+                    <ul>
+                        <li id="head-nav-left"><a href="#projects">View My Work</a></li>
+                        <li id="head-nav-right"><a href="#about">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="container alt" id="projects">
+                <h2>My Projects</h2>
+                <ul id="selection">
+   
+                </ul>
+                <ul id="projects-list">
+
+                </ul>
+            </section>
+
+            <section class="container" id="about">
+                <h2>About Me</h2>
+                <p id="about-me-description">I enjoy solving problems through code and turning ideas into functional, user-friendly web pages. Right now, I'm focused on strengthening my foundation in HTML, CSS, and JavaScript while building projects that reflect my growth as a developer. My goal is to keep improving every day, learn best practices, and eventually contribute to real-world projects that create value.</p>
+            </section>
+
+            <section class="container alt" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <i class="fa-brands fa-html5 fa-5x" aria-hidden="true"></i>
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <i class="fa-brands fa-css3 fa-5x" aria-hidden="true"></i>
+                            <figcaption>CSS3</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <i class="fa-brands fa-js fa-5x" aria-hidden="true"></i>
+                            <figcaption>JavaScipt</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal">&times;</span>
+
+                    <h2 id="project-title"></h2>
+
+                    <iframe id="project-frame" src="" frameborder="0"></iframe>
+
+                    <p class="code-type">
+                        HTML
+                        <button class="copy-btn" data-target="project-html">Copy</button>
+                    </p>
+                    <pre>
+                        <code class="project-code" id="project-html"></code>
+                    </pre>
+
+                    <p class="code-type">
+                        CSS
+                        <button class="copy-btn" data-target="project-css">Copy</button>
+                    </p>
+                    <pre>
+                        <code class="project-code" id="project-css"></code>
+                    </pre>
+
+                    <p class="code-type">
+                        JS
+                        <button class="copy-btn" data-target="project-js">Copy</button>
+                    </p>
+                    <pre>
+                        <code class="project-code" id="project-js"></code>
+                    </pre>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Contact me at: </p>
+            <a id="mail-link" href="mailto:leonn09@gmail.com">leonn09@gmail.com</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

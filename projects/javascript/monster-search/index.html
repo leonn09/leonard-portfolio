@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPG Monster Search</title>
+        <link rel="stylesheet" href="styles.css">
+
+
+        <link rel="shortcut icon" href="#" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>MONSTER SEARCH</h1>
+        </header>
+        <main>
+
+            <div class="card">
+                <div class="card2">
+                    <div class="form-control">
+                        <input type="text" class="input input-alt" id="search-input" placeholder="Input monster name or ID" required>
+                        <span class="input-border input-border-alt"></span>
+                    </div>
+                    <button class="button" id="search-button">Search</button>
+                </div>
+            </div>
+
+            <div class="card monster-card">
+                <div class="card2 monster-card">
+                    <div>
+                        <span id="creature-name"></span><span id="creature-id"></span>
+                    </div>
+                    <div>
+                        <span id="weight"></span><span id="height"></span>
+                    </div>
+                    <p>
+                        <span id="types">
+
+                        </span>
+                    </p>
+
+                    <div id="skill-container">
+                        <span id="skill"></span>
+                        <p id="skill-desc"></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card monster-stats-card">
+                <div class="card2 monster-stats-card">
+                    <div id="monster-stats">
+                        <span class="stat-label">HP: </span><span id="hp"></span>
+                        <span class="stat-label">ATK: </span><span id="attack"></span>
+                        <span class="stat-label">DEF: </span><span id="defense"></span>
+                        <span class="stat-label">SP ATK: </span><span id="special-attack"></span>
+                        <span class="stat-label">SP DEF: </span><span id="special-defense"></span>
+                        <span class="stat-label">SPD: </span><span id="speed"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

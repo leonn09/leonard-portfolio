@@ -1,0 +1,369 @@
+body {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    color: white;
+    font-family: "TASA Explorer", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+h1:hover {
+	background: linear-gradient(90deg, #0ff, rgb(255, 148, 48), #0ff) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+@keyframes shimmer { to { background-position: 100% } }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card {
+    font-size: 0.7rem;
+    width: 20rem;
+    height: 10rem;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 {
+    width: 20rem;
+    height: 10rem;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    border: 2px solid #757575;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.monster-card {
+    height: 18rem;
+    gap: 1rem;
+}
+
+.monster-stats-card {
+    height: 13rem;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    border-width: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.input {
+    width: 16.5rem;
+    color: #fff;
+    font-family: "TASA Explorer", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:focus + .input-border {
+    width: 100%;
+}
+
+.form-control {
+    position: relative;
+    --width-of-input: 300px;
+}
+
+.input-alt {
+    font-size: 1.2rem;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-border-alt {
+    height: 3px;
+    background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+    }
+
+.input-alt:focus + .input-border-alt {
+    width: 100%;
+}
+
+.button {
+    font-family: "TASA Explorer", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-block-start: 1rem;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.button:hover::after {
+    filter: blur(30px);
+}
+
+.button:hover::before {
+    transform: rotate(-180deg);
+}
+
+.button:active::before {
+    scale: 0.7;
+}
+
+#creature-name {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#creature-id {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#weight, #height {
+    font-size: 1.2rem;
+}
+
+.type-container {
+    font-size: 1rem;
+    font-weight: 600;;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.fire {
+	background: linear-gradient(90deg, rgb(255, 72, 0), rgb(255, 148, 48), rgb(255, 0, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.water {
+    background: linear-gradient(90deg, rgb(0, 59, 253), rgb(35, 148, 192), rgb(25, 0, 255)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.rock {
+    background: linear-gradient(90deg, rgb(66, 45, 6), rgb(139, 66, 20), rgb(68, 42, 2)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.electric {
+    background: linear-gradient(90deg, rgb(255, 238, 0), rgb(255, 242, 66), rgb(255, 208, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.dragon {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(141, 15, 15), rgb(0, 0, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.grass {
+    background: linear-gradient(90deg, rgb(47, 158, 3), rgb(72, 255, 48), rgb(40, 202, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.poison {
+    background: linear-gradient(90deg, rgb(4, 75, 31), rgb(79, 9, 107), rgb(4, 75, 31)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.ice {
+    background: linear-gradient(90deg, rgb(0, 255, 255), rgb(8, 57, 71), rgb(0, 255, 200)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.fairy {
+    background: linear-gradient(90deg, rgb(255, 0, 200), rgb(255, 29, 244), rgb(248, 32, 255)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.ground {
+    background: linear-gradient(90deg, rgb(109, 59, 12), rgb(56, 29, 11), rgb(109, 59, 12)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.flying {
+    background: linear-gradient(90deg, rgb(184, 155, 62), rgb(250, 215, 191), rgb(184, 155, 62)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.bug {
+    background: linear-gradient(90deg, rgb(106, 255, 47), rgb(82, 42, 4), rgb(40, 202, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.dark {
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(122, 122, 122), rgb(0, 0, 0)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.psychic {
+    background: linear-gradient(90deg, rgb(75, 1, 44), rgb(255, 255, 255), rgb(72, 3, 75)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.steel {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(112, 112, 112), rgb(255, 255, 255)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+.ghost {
+    background: linear-gradient(90deg, rgb(26, 0, 15), rgb(63, 27, 55), rgb(29, 2, 20)) -100%/ 200%;
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	animation: shimmer 2s linear infinite
+}
+
+#skill-container {
+    width: 17rem;
+}
+
+#skill {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#skill-desc {
+    font-size: 0.9rem;
+    margin-block-start: 0.2rem;
+}
+
+#monster-stats {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-weight: 400;
+}

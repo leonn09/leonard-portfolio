@@ -1,0 +1,57 @@
+{
+    "JavaScript": {
+        "Monster Search": {
+            "image": "monster-search.jpg",
+            "alt": "Screenshot of Monster Search web app showing monster details",
+            "description": "A web app that lets users look up monsters by name or ID, showing their stats, types, and abilities. Built with HTML, CSS, and JavaScript."
+        },
+        "Cash Register": {
+            "image": "cash-register.jpg",
+            "alt": "Screenshot of Cash Register app calculating change",
+            "description": "A JavaScript app that simulates a cash register by calculating change and returning the correct currency breakdown. Built with HTML, CSS, and JavaScript."
+        },
+        "US Phone Number Validator": {
+            "image": "us-phone-number-validator.jpg",
+            "alt": "Screenshot of US Phone Number Validator input and validation result",
+            "description": "A tool that checks if a number matches valid US phone formats using regex. Built with HTML, CSS, and JavaScript."
+        },
+        "Roman Numeral Converter": {
+            "image": "roman-numeral-converter.jpg",
+            "alt": "Screenshot of Roman Numeral Converter converting number to Roman numerals",
+            "description": "An interactive tool that converts numbers into Roman numerals up to 3999. It validates input, handles edge cases, and gives instant results. Built with HTML, CSS, and JavaScript."
+        },
+        "Palindrome Checker": {
+            "image": "palindrome-checker.jpg",
+            "alt": "Screenshot of Palindrome Checker app showing input and result",
+            "description": "A text utility that detects whether a word or phrase is a palindrome. It ignores punctuation, spaces, and capitalization, giving users instant feedback. Built with HTML, CSS, and JavaScript."
+        }
+    },
+    "CSS": {
+        "Survey Form": {
+            "image": "survey-form.jpg",
+            "alt": "Screenshot of Survey Form project with input fields and submit button",
+            "description": "A responsive form project showcasing text fields, checkboxes, and radio buttons with clean HTML structure and CSS styling."
+        },
+        "Product Landing Page": {
+            "image": "product-landing-page.jpg",
+            "alt": "Screenshot of Product Landing Page project with product sections and call-to-action",
+            "description": "A single-page layout with sections for features, pricing, and a call-to-action. Built with semantic HTML and styled with CSS for responsiveness."
+        },
+        "Technical Documentation Page": {
+            "image": "technical-documentation-page.jpg",
+            "alt": "Screenshot of Technical Documentation Page project with sidebar navigation and content",
+            "description": "A documentation-style page featuring a fixed sidebar and scrollable content area. Uses HTML for structure and CSS for layout and readability."
+        },
+        "Tribute Page": {
+            "image": "tribute-page.jpg",
+            "alt": "Screenshot of Tribute Page project with heading, image, and text content",
+            "description": "A tribute page with a centered layout, image, and descriptive text. Demonstrates basic HTML semantics and simple responsive CSS design."
+        },
+        "Portfolio Page": {
+            "image": "portfolio-page.jpg",
+            "alt": "Screenshot of Portfolio Page project with navigation bar, welcome section, services grid, and GitHub link",
+            "description": "A responsive personal portfolio mockup featuring an about section, services grid, and contact area with GitHub link. Built with HTML and CSS to demonstrate layout and responsiveness."
+        }
+    },
+    "HTML": 0
+}

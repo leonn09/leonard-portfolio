@@ -1,0 +1,340 @@
+:root {
+    --primary-color: #3f3e3e;
+    --secondary-color: #dbdbdb;
+    --primary-color-shade1: #474747;
+    --secondary-color-shade1: #ffffff;
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color-shade1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    margin-block-start: 0.1rem;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+.alt {
+    background-color: var(--secondary-color);
+}
+
+.alt h2 {
+    color: var(--primary-color);
+}
+
+/*START OF HEADER*/
+header {
+    padding: 0.75rem 0;
+    text-align: center;
+    display: flex;
+    padding-inline: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+}
+
+#leo-avatar {
+    width: 5.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color-shade1);
+}
+
+header nav {
+    display: grid;
+    justify-content: center;
+    margin-block-start: 1rem;
+    margin-block-end: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-block: 0.5rem;
+    padding-inline: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color-shade1);
+}
+
+#head-nav-left {
+    background-color: var(--secondary-color);
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+#head-nav-right {
+    background-color: var(--secondary-color-shade1);
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+/*END OF HEADER*/
+
+/*START OF MAIN*/
+/*START OF <SECTION ID="PROJECTS>*/
+#projects #selection {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-block-start: 0;
+    padding-block-end: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#projects #selection li {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+}
+
+#projects #projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-inline-start: 0;
+    padding-block-end: 2rem;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+#projects #projects-list li {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color-shade1);
+}
+
+#projects #projects-list li img {
+    width: 15rem;
+    border: 0.1rem solid var(--secondary-color-shade1);
+    box-shadow: 0.3rem 0.3rem var(--primary-color-shade1);
+}
+
+#projects #projects-list li:hover {
+    border: 0.1rem solid var(--primary-color);
+    box-shadow: 0.3rem 0.3rem var(--primary-color-shade1);
+    cursor: pointer;
+}
+
+#projects #projects-list .nothing-li:hover {
+    border: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+#projects #projects-list li:hover > img {
+    border: none;
+    box-shadow: none;
+}
+
+#projects #projects-list li .nothing {
+    font-size: 2rem;
+}
+
+#projects #projects-list li .project-title {
+    width: 15rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+#projects #projects-list li .project-desc {
+    width: 15rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-block-start: 0;
+}
+
+#projects #selection .unselected {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 0.1rem solid var(--primary-color);
+}
+
+#projects #selection .unselected:hover {
+    box-shadow: 0.1rem 0.1rem var(--primary-color);
+    cursor: pointer;
+}
+
+#projects #selection .selected {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+}
+/* END OF <SECTION ID="PROJECTS> */
+
+/*START OF <SECTION ID="ABOUT>*/
+#about-me-description {
+    text-align: justify;
+    text-indent: 2rem;
+    font-size: 0.9rem;
+}
+/*END OF <SECTION ID="ABOUT>*/
+
+/*START OF <SECTION ID="SKILLS>*/
+#skills ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+figure {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+figcaption {
+    font-weight: 800;
+}
+
+/*END OF <SECTION ID="SKILLS>*/
+/*END OF MAIN*/
+
+/*START OF FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+}
+
+footer #mail-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--primary-color);
+    width: fit-content;
+    padding: 0.8rem;
+    background: var(--secondary-color);
+    border-radius: 2.5rem;
+    border: 0.3rem solid var(--primary-color);
+}
+
+footer #mail-link:hover {
+    color: var(--secondary-color-shade1);
+    background: var(--primary-color);
+    border: 0.3rem solid var(--secondary-color-shade1);
+}
+/*END OF FOOTER*/
+
+/* FOR OTHER VIEWPORTS */
+@media (min-width: 768px) {
+    #projects #selection {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #about-me-description {
+        max-width: 75%;
+        text-align: center;
+        margin: auto;
+        text-indent: 0rem;
+        font-size: 1rem;
+    }
+}
+
+/* START OF MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: var(--secondary-color);
+    margin: 2rem auto;
+    padding: 0.3rem;
+    width: 95%;
+    max-width: 80rem;
+    color: var(--primary-color);
+}
+
+#project-frame {
+    display: block;
+    width: 92.5%;
+    margin: 0 auto;
+    height: 35rem;
+    margin-bottom: 1rem;
+
+}
+
+.code-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+pre {
+    background: var(--primary-color-shade1);
+    color: var(--secondary-color);
+    padding: 1rem;
+    overflow-x: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#close-modal {
+    color: #ff0000;
+    font-size: 2rem;
+    margin: 0;
+    margin-inline-start: 0.7rem;
+}
+
+.copy-btn {
+  font-size: 0.7rem;
+  padding: 0.5rem 0.7rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.copy-btn:hover {
+  background: var(--primary-color-shade1);
+}
+
+/* END OF MODAL */
+

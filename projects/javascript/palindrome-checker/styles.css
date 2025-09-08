@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: "Roboto", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2b2d42;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #edf2f4;
+    text-align: center;
+    margin: auto;
+    margin-block-start: 2rem;
+}
+
+#redbox {
+    height: 20rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #edf2f4;
+    background-color: #d90429;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+#text-input {
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+
+#text-input:focus {
+    outline-style: inset;
+    outline-width: 0.2rem;
+    outline-color: #8d99ae;
+}
+
+#check-btn {
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 900;
+    color: #ef233c;
+    background-color: #2b2d42;
+    border: none;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+#check-btn:hover {
+    outline: 0.3rem outset #8d99ae;
+}
+
+#check-btn:active {
+    outline: 0.3rem inset #8d99ae;
+}
+
+#result {
+    margin-block: 2rem;
+}
+
+#whitebox {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    height: 20rem;
+    width: 20rem;
+    background-color: #edf2f4;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}

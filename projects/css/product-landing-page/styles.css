@@ -1,0 +1,208 @@
+/* Reset default browser margin and set dark background and text color */
+body {
+    margin: 0;
+    background-color: #191919;
+    color: white;
+    font-family: "Roboto", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header container styles */
+#header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Split into two columns: logo and nav */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    background-color: #191919;
+    width: 100%; /* Full width */
+}
+
+/* Navigation links container inside the header */
+#header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 evenly spaced links */
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+/* Logo image */
+#header img {
+    width: 10rem;
+    margin: auto;
+}
+
+/* Nav link styles */
+#header a {
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Hover effect for nav links */
+#header a:hover {
+    color: #F90B31;
+}
+
+/* Video section container */
+#video-div {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: #F90B31;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* To account for fixed header height */
+}
+
+/* Embedded video dimensions */
+#video {
+    width: 720px;
+    height: 405px;
+}
+
+/* Responsive video size for small screens */
+@media only screen and (max-width: 720px) {
+    #video-div {
+        margin-top: 10px;
+    }
+
+    #video {
+        width: 360px;
+        height: 202px;
+    }
+}
+
+/* Features section layout */
+#features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 features side by side */
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Each feature block with icon and description */
+.features-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* icon and text side by side */
+    align-items: center;
+}
+
+/* Feature image size */
+.features-block img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Form background and alignment */
+#form {
+    background-color: #F90B31;
+    text-align: center;
+    padding-block: 20px;
+}
+
+/* Flex container for form content */
+#formflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+/* Email input styling */
+#email {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+}
+
+/* Subscribe heading style */
+#subscribe {
+    color: #191919;
+    margin: 10px;
+}
+
+/* Submit button styles */
+#submit {
+    background-color: white;
+    border: 1px solid black;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+/* Hover effect for submit button */
+#submit:hover {
+    background-color: #F90B31;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+/* Responsive layout for mobile screens */
+@media only screen and (max-width: 720px) {
+    #features {
+        grid-template-columns: 1fr; /* Stack features vertically */
+        font-size: 0.8rem;
+    }
+
+    .features-block {
+        grid-template-columns: repeat(2, 1fr); /* icon and text in two columns */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .features-block img {
+        width: 7em;
+        height: 7em;
+        margin: auto;
+    }
+
+    #header nav {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #video-div {
+        margin-top: 120px; /* Add more space below nav */
+    }
+
+    #formflex {
+        flex-direction: column;
+    }
+
+    #submit {
+        margin: 10px;
+    }
+}
+
+/* Tablet responsiveness */
+@media only screen and (max-width: 900px) {
+    #features {
+        gap: 10px;
+        font-size: .8rem;
+        padding-inline: 20px;
+    }
+
+    .features-block {
+        grid-template-columns: 1fr; /* Stack icon and text */
+    }
+}
+
+/* Large screen adjustments */
+@media only screen and (max-width: 1440px) {
+    #features {
+        padding-inline: 20px;
+    }
+
+    .features-block img {
+        width: 10rem;
+        height: 10rem;
+    }
+}

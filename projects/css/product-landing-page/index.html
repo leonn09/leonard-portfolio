@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Sets character encoding to UTF-8 for full character support -->
+        <meta charset="utf-8">
+
+        <!-- Ensures proper rendering and touch zooming on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title shown in browser tab -->
+        <title>Product Landing Page</title>
+
+        <!-- Link to your external stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Google Fonts for better typography -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    </head>
+
+    <body>
+        <main>
+            <!-- Header with logo and navigation links -->
+            <header id="header">
+                <!-- Company or product logo -->
+                <img id="header-img" src="https://lh3.googleusercontent.com/d/1mQrIOmg1jYXekEBkbfzl6s5ZDvPwgBis=w600-h600" alt="AI Robot Kulas Logo">
+
+                <!-- Navigation bar with links to different sections of the page -->
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#video">How it Works</a>
+                    <a class="nav-link" href="#form">Subscribe</a>
+                </nav>
+            </header>
+
+            <!-- Video section -->
+            <section>
+                <div id="video-div">
+                    <!-- Embedded YouTube video demonstrating the product -->
+                    <iframe 
+                        id="video"
+                        type="text/html"
+                        src="https://www.youtube.com/embed/Jky9I1ihAkg?autoplay=1&mute=1&controls=0&loop=1"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Product Features Section -->
+            <section>
+                <div id="features">
+                    <!-- First Feature Block -->
+                    <div class="features-block">
+                        <img src="https://lh3.googleusercontent.com/d/1jjZhYjWZQJFcrcIQLV2A278ajqWv6mxZ=w600-h600" alt="Voice-Activated Smart Assistant Logo">
+                        <div>
+                            <h2>Voice-Activated Smart Assistant</h2>
+                            <p>Responds to voice commands for tasks like music, reminders, and more.</p>
+                            <p><i>“Just say 'Hey Nova!' and let the robot handle the rest.”</i></p>
+                        </div>
+                    </div>
+
+                    <!-- Second Feature Block -->
+                    <div class="features-block">
+                        <img src="https://lh3.googleusercontent.com/d/12Wjodhfp0HNQyoj67WAGSBk7AHazpC28=w600-h600" alt="Facial Recognition & Auto-Greeting Logo">
+                        <div>
+                            <h2>Facial Recognition & Auto-Greeting</h2>
+                            <p>Greets users personally using facial recognition technology.</p>
+                            <p><i>“Kulas knows who you are.”</i></p>
+                        </div>
+                    </div>
+
+                    <!-- Third Feature Block -->
+                    <div class="features-block">
+                        <img src="https://lh3.googleusercontent.com/d/1jwOI8W4y8ffgf8uPjq-1gCJ8X0HcjxAf=w600-h600" alt="Learning & Adapting Behavior Logo">
+                        <div>
+                            <h2>Learning & Adapting Behavior</h2>
+                            <p>Adapts to your habits for smarter support over time.</p>
+                            <p><i>“The more you interact, the smarter it gets.”</i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subscription Form Section -->
+            <section>
+                <!-- Submits to freeCodeCamp on submit -->
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <div id="formflex">
+                        <h2 id="subscribe">SUBSCRIBE NOW</h2>
+                        <!-- Input for user's email address -->
+                        <input name="email" id="email" type="email" placeholder="Email Adress">
+                        <!-- Submit button -->
+                        <input id="submit" type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

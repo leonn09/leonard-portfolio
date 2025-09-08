@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- This tells the browser the type of document; here it's HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8, which supports most characters/languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the layout responsive on mobile devices -->
+    <title>Dennis Ritchie</title>
+    <!-- Sets the title that appears in the browser tab -->
+    
+    <!-- Links an external CSS file that contains the page's styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Loads the 'Roboto' font from Google Fonts to be used on the page -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+</head>
+
+<body>
+    <!-- The main header of the page -->
+    <header>
+        <!-- Main heading with a unique ID for styling -->
+        <h1 id="title">Dennis Ritchie</h1>
+
+        <!-- Subheading describing the subject -->
+        <p id="subtitle">The man who shaped modern computing</p>
+    </header>
+
+    <!-- Main content section -->
+    <main id="main">
+        <!-- First section for the image and caption -->
+        <section>
+            <div id="img-div">
+                <!-- Image of Dennis Ritchie with alt text for accessibility -->
+                <img id="image" src="https://media.cnn.com/api/v1/images/stellar/prod/111014015647-dennis-ritchie-ken-thompson-bell-labs.jpg?q=x_23,y_269,h_1200,w_2133,c_crop/h_653,w_1160/f_avif" alt="Dennis Ritchie stands over Ken Thompson"/>
+                
+                <!-- Caption below the image -->
+                <div id="img-caption">
+                    <p>Dennis Ritchie stands over Ken Thompson as he works on the PDP-11 in 1972.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second section with the timeline of his life -->
+        <section id="tribute-info">
+            <div id="tribute-info-header">
+                <h2>Here's a time line of Dennis Ritchie's life:</h2>
+            </div>
+
+            <!-- List of key life events -->
+            <div>
+                <ul>
+                    <li><strong>1941</strong> - Born in Bronxville, New York, USA</li>
+                    <li><strong>1963</strong> - Earns a bachelor's degree in physics from Harvard University</li>
+                    <li><strong>1968</strong> - Completes a Ph.D. in mathematics from Harvard</li>
+                    <li><strong>1967</strong> - Joins Bell Labs, where he begins working on the Multics</li>
+                    <li><strong>1969</strong> - Teams up with Ken Thompson to create Unix</li>
+                    <li><strong>1972</strong> - Creates the C programming language and rewrites Unix in it</li>
+                    <li><strong>1978</strong> - Publishes The C Programming Language book</li>
+                    <li><strong>1983</strong> - Wins the Turing Award with Ken Thompson</li>
+                    <li><strong>1990s</strong> - Works on Plan 9 and Inferno (Unix evolution)</li>
+                    <li><strong>1999</strong> - Wins National Medal of Technology with Thompson</li>
+                    <li><strong>2007</strong> - Retires from Lucent Technologies</li>
+                    <li><strong>2011</strong> - Passes away at age 70</li>
+                </ul>
+            </div>
+
+            <!-- Quotation about Ritchie -->
+            <div id="tribute-info-quote">
+                <p>"Ritchie's influence rivals that of Edison or Einstein in terms of the impact of his work on the modern world."
+                — Anonymous software engineer</p>
+            </div>
+        </section>
+
+        <!-- Link to learn more about Ritchie -->
+        <p id="footnote">
+            If you have time, you should read more about this brilliant pioneer on his 
+            <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Dennis_Ritchie">Wikipedia</a> entry.
+        </p>
+    </main>
+</body>
+</html>

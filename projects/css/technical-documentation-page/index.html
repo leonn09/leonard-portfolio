@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding for your document -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures your layout adjusts to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technical Documentation Page Example</title>
+
+    <!-- Links your external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Imports a nice-looking Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+</head>
+
+<body>
+    <!-- Main content container -->
+    <main id="main-doc">
+
+        <!-- Navigation section on the left side -->
+        <div>
+            <nav id="navbar">
+                <!-- Header for the nav section -->
+                <header>
+                    <span>Documentation Page: </span>
+                    <p><strong>Responsive CSS Basics</strong></p>
+                </header>
+
+                <!-- Navigation links to jump to each section -->
+                <ul>
+                    <!-- Each link scrolls to the corresponding section by ID -->
+                    <li><a class="nav-link" href="#Introduction_to_Responsive_Design">Introduction to Responsive Design</a></li>
+                    <li><a class="nav-link" href="#The_Viewport_Meta_Tag">The Viewport Meta Tag</a></li>
+                    <li><a class="nav-link" href="#Media_Queries">Media Queries</a></li>
+                    <li><a class="nav-link" href="#Relative_Units">Relative Units</a></li>
+                    <li><a class="nav-link" href="#Responsive_Images_and_Flexbox_Grid">Responsive Images and Flexbox Grid</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Each section below is a separate documentation topic -->
+        <!-- These IDs are used so links can scroll here automatically -->
+
+        <section class="main-section" id="Introduction_to_Responsive_Design">
+            <header>Introduction to Responsive Design</header>
+            <p>Responsive design is a method of building websites that work well on all screen sizes — from mobile phones to large desktop monitors.</p>
+            <br>
+            <p>Key benefits:</p>
+            <ul>
+                <li>Better user experience across devices</li>
+                <li>Avoids zooming or horizontal scrolling</li>
+                <li>Improves accessibility and SEO</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="The_Viewport_Meta_Tag">
+            <header>The Viewport Meta Tag</header>
+            <p>To make your page responsive, add this meta tag inside the <code>&lthead&gt;</code>:</p>
+            
+            <!-- Styled code snippet box -->
+            <div class="code-example">  
+                <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+            </div>
+
+            <br>
+            <p>What it does:</p>
+            <ul>
+                <li>Defines the visible area of your website.</li>
+                <li>Helps scale and fit your layout on all devices.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p>Media queries allow you to change styles based on screen size or device type.</p>
+
+            <div class="code-example">
+                <code>
+                    @media (max-width: 600px) { <br>
+                        &nbsp;&nbsp;&nbsp;body { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue; <br>
+                        &nbsp;&nbsp;&nbsp;} <br>
+                    }
+                </code> 
+            </div>
+            <p>This means: if the screen width is 600px or less, change the background color.</p>
+        </section>
+
+        <section class="main-section" id="Relative_Units">
+            <header>Relative Units</header>
+            <p class="units">%, em, rem, vw, vh</p>
+            <p>Use relative units for scaling content across devices.</p>
+            
+            <ul>
+                <li><strong>%</strong> - Based on parent element's size</li>
+                <li><strong>em</strong> - Based on current element's font size</li>
+                <li><strong>rem</strong> - Based on root font size</li>
+                <li><strong>vw</strong> - 1% of viewport width</li>
+                <li><strong>vh</strong> - 1% of viewport height</li>
+            </ul>
+        
+            <p>Example:</p>
+            <div class="code-example">
+                <code>.container {<br>
+                    &nbsp;&nbsp;&nbsp;width: 80%; <br>
+                    &nbsp;&nbsp;&nbsp;padding: 2rem; <br>
+                    &nbsp;&nbsp;&nbsp;font-size: 1.2em; <br>
+                }</code>
+            </div>
+        </section>
+
+        <section class="main-section" id="Responsive_Images_and_Flexbox_Grid">
+            <header>Responsive Images and Flexbox Grid</header>
+            <p>Images can scale properly using these styles:</p>
+            
+            <div class="code-example">
+                <code>img {<br>
+                    &nbsp;&nbsp;&nbsp;max-width: 100%; <br>
+                    &nbsp;&nbsp;&nbsp;height: auto; <br>
+                }</code>
+            </div>
+            
+            <br><br>
+            <p>To structure layouts responsively, use Flexbox or Grid:</p>
+
+            <p>Flexbox example:</p>
+            <div class="code-example">
+                <code>.container {<br>
+                    &nbsp;&nbsp;&nbsp;display: flex; <br>
+                    &nbsp;&nbsp;&nbsp;flex-wrap: wrap; <br>
+                }</code>
+            </div>
+
+            <br><br>
+            <p>Grid example:</p>
+            <div class="code-example">
+                <code>.container {<br>
+                    &nbsp;&nbsp;&nbsp;display: grid; <br>
+                    &nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 1fr; <br>
+                }</code>
+            </div>
+        </section>
+
+        <!-- Optional tools to test how your page behaves on different screens -->
+        <section class="optional-section">
+            <header>Some useful tools to test responsiveness:</header>
+            <p>Chrome DevTools Device Emulator</p>
+            <p><a href="https://responsively.app/">responsively.app</a></p>
+            <p>Browser resizing extensions</p>
+        </section>
+    </main>
+</body>
+</html>
